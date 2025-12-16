@@ -13,7 +13,13 @@ jobs:
 
     steps:
 
-      - name: 'print working directory'
+      - name: 'print working directory b'
+        run: ls
+
+
+      - uses: actions/checkout@v3
+
+      - name: 'print working directory a'
         run: ls
 
 
