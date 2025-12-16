@@ -13,3 +13,10 @@ jobs:
 
       - name: Login to Docker Hub2
         run: docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_TOKEN2 }}
+
+
+      - name: Build Docker Image
+        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/shahd-image .
+
+      - name: Push Docker Image
+        run: docker push 
