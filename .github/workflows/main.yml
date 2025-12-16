@@ -13,11 +13,9 @@ jobs:
 
     steps:
 
-      - name: 'testing github actions'
-        run: pwd
+      - name: 'print working directory'
+        run: ls
 
-      - name: 'testing printing'
-        run: echo shahd
 
 
 
