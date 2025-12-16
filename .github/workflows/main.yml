@@ -12,15 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: 'print working directory b'
-        run: ls
-
-
       - uses: actions/checkout@v3
 
-      - name: 'print working directory a'
-        run: ls
+      - name: 'login to docker hub'
+        run: docker login --username shahd05elboshy --password dckr_pat_t6iyF7vwvA-gP3ebzeAMacJxztU
+
 
 
 
