@@ -19,4 +19,4 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/shahd-image .
 
       - name: Push Docker Image
-        run: docker push 
+        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/shahd-image
